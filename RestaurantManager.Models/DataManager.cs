@@ -27,7 +27,6 @@ namespace RestaurantManager.Models
             this.Repository = new RestaurantContext();
             await this.Repository.InitializeContextAsync();
             OnDataLoaded();
-            //OnPropertyChanged(); //TODO
         }
 
         protected abstract void OnDataLoaded();
