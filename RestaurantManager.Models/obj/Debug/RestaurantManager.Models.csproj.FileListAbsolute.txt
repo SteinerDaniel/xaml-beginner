@@ -32,7 +32,6 @@ C:\Users\Daniel\Documents\Workspace_C#\DesigningAdvancedApplicationsWithXAML_edx
 C:\Users\Daniel\Documents\Workspace_C#\DesigningAdvancedApplicationsWithXAML_edx2015\hwstart\RestaurantManager.Models\obj\Debug\qualifiers.txt
 C:\Users\Daniel\Documents\Workspace_C#\DesigningAdvancedApplicationsWithXAML_edx2015\hwstart\RestaurantManager.Models\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Daniel\Documents\Workspace_C#\DesigningAdvancedApplicationsWithXAML_edx2015\hwstart\RestaurantManager.Models\obj\Debug\MultipleQualifiersPerDimensionFound.txt
-C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.Models\obj\Debug\RestaurantManager.Models.csprojResolveAssemblyReference.cache
 C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.Models\obj\Debug\RestaurantManager.Models.dll
 C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.Models\obj\Debug\RestaurantManager.Models.pdb
 C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.Models\bin\Debug\RestaurantManager.Models.dll
