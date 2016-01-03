@@ -119,6 +119,14 @@
       <RootProperty Name="ItemTemplate" />
     </RootType>
     <RootType FullName="RestaurantManager.UniversalWindows.ExpeditePage" />
+    <RootType FullName="Microsoft.Xaml.Interactivity.Interaction">
+      <RootMethod Name="GetBehaviors" />
+      <RootMethod Name="SetBehaviors" />
+    </RootType>
+    <RootType FullName="RestaurantManager.Extensions.RightClickMessageDialogBehavior">
+      <RootProperty Name="Message" />
+      <RootProperty Name="Title" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ControlTemplate">
       <RootProperty Name="TargetType" />
       <RootProperty Name="Template" />
