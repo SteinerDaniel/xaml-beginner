@@ -48,3 +48,4 @@ C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.Models\obj\Debu
 C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.Models\obj\Debug\qualifiers.txt
 C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.Models\obj\Debug\qualifiers.txt.intermediate
 C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.Models\obj\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.Models\obj\Debug\RestaurantManager.Models.csprojResolveAssemblyReference.cache

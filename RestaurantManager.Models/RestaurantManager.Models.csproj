@@ -121,7 +121,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RestaurantContext.cs" />
     <Compile Include="Table.cs" />
-    <Compile Include="ViewModels\ExpediteViewModel.cs" />
     <Content Include="Properties\RestaurantManager.Models.rd.xml" />
   </ItemGroup>
   <ItemGroup />
