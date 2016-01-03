@@ -330,6 +330,9 @@
     <AppxPackagedFile Include="C:\Users\Daniel\.nuget\packages\System.Xml.XmlSerializer\4.0.10\lib\netcore50\System.Xml.XmlSerializer.dll">
       <PackagePath>System.Xml.XmlSerializer.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.Extensions\bin\Debug\RestaurantManager.Extensions.dll">
+      <PackagePath>RestaurantManager.Extensions.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.Models\bin\Debug\RestaurantManager.Models.dll">
       <PackagePath>RestaurantManager.Models.dll</PackagePath>
     </AppxPackagedFile>

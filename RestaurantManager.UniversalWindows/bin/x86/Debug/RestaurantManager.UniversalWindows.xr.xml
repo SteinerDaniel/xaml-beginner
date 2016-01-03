@@ -1,7 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="OrderItems" />
+    <RootPropertyPathName Name="Expedite" />
     <RootPropertyPathName Name="SpecialRequests" />
     <RootPropertyPathName Name="Table" />
     <RootPropertyPathName Name="Description" />
@@ -41,11 +45,15 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="DataContext" />
+      <RootProperty Name="Resources" />
       <RootProperty Name="TopAppBar" />
       <RootProperty Name="Content" />
-      <RootProperty Name="Resources" />
     </RootType>
     <RootType FullName="RestaurantManager.Models.ExpediteDataManager" />
+    <RootType FullName="RestaurantManager.Extensions.BoolToColorConverter">
+      <RootProperty Name="TrueColor" />
+      <RootProperty Name="FalseColor" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBar">
       <RootProperty Name="Content" />
     </RootType>
@@ -82,7 +90,10 @@
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="ItemTemplate" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding" />
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="Converter" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
     </RootType>

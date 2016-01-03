@@ -4,13 +4,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:RestaurantManager.UniversalWindows"
     xmlns:models="using:RestaurantManager.Models"
-    xmlns:vm="using:RestaurantManager.Models.ViewModels"
+    xmlns:extensions="using:RestaurantManager.Extensions"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
     <Page.DataContext>
         <models:ExpediteDataManager/>
     </Page.DataContext>
+    <Page.Resources>
+        <extensions:BoolToColorConverter x:Key="BoolToColorConverter"/>
+    </Page.Resources>
     <Page.TopAppBar>
         <AppBar>
             <AppBarButton Label="Home" Click="MainPage_Click">
@@ -56,7 +59,15 @@
                         </StackPanel>
                         <Border Grid.Row="2">
                             <Border.Background>
-                                <SolidColorBrush x:Name="StatusBrush" Color="Transparent" />
+                                <SolidColorBrush x:Name="StatusBrush">
+                                    <SolidColorBrush.Color>
+                                        <Binding Path="Expedite">
+                                            <Binding.Converter>
+                                                <extensions:BoolToColorConverter TrueColor="Red" FalseColor="Transparent"/>
+                                            </Binding.Converter>
+                                        </Binding>
+                                    </SolidColorBrush.Color>
+                                </SolidColorBrush>
                             </Border.Background>
                             <Button Content="Delete" HorizontalAlignment="Center" />
                         </Border>
