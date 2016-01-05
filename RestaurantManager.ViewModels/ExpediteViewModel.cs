@@ -8,23 +8,12 @@ namespace RestaurantManager.ViewModels
     {
         protected override void OnDataLoaded()
         {
-            this.OrderItems = base.Repository.Orders;
+            NotifyPropertyChanged("OrderItems");
         }
-
-        private List<Order> _OrderItems;
 
         public List<Order> OrderItems
         {
-            //get { return base.Repository.Orders; }
-            get { return _OrderItems; }
-            set
-            {
-                if (value != _OrderItems)
-                {
-                    _OrderItems = value;
-                    NotifyPropertyChanged();
-                }
-            }
+            get { return base.Repository?.Orders; }
         }
     }
 }

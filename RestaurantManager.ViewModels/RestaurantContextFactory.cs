@@ -7,7 +7,7 @@ using RestaurantManager.Models;
 
 namespace RestaurantManager.ViewModels
 {
-    class RestaurantContextFactory
+    public static class RestaurantContextFactory
     {
         private static RestaurantContext _restaurantContext;
 
