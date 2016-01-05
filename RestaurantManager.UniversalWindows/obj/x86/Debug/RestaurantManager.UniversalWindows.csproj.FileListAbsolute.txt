@@ -851,3 +851,6 @@ C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.UniversalWindow
 C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.UniversalWindows\obj\x86\Debug\RestaurantManager.UniversalWindows.csproj.GenerateResource.Cache
 C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\Microsoft.Xaml.Interactivity.dll
 C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\Microsoft.Xaml.Interactions.dll
+C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\RestaurantManager.ViewModels.dll
+C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\RestaurantManager.ViewModels.pdb
+C:\Users\Daniel\Documents\GitHub\xaml-beginner\RestaurantManager.UniversalWindows\bin\x86\Debug\RestaurantManager.ViewModels.pri
