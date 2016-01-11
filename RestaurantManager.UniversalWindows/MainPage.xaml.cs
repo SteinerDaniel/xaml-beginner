@@ -1,4 +1,5 @@
-﻿using Windows.UI.Xaml;
+﻿using Windows.UI.Popups;
+using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 
 namespace RestaurantManager.UniversalWindows
@@ -8,7 +9,6 @@ namespace RestaurantManager.UniversalWindows
         public MainPage()
         {
             this.InitializeComponent();
-            //SlideIn.Begin();
         }
 
         private void ExpeditePage_Click(object sender, RoutedEventArgs e)
@@ -19,6 +19,19 @@ namespace RestaurantManager.UniversalWindows
         private void OrderPage_Click(object sender, RoutedEventArgs e)
         {
             this.Frame.Navigate(typeof(OrderPage));
+        }
+
+        private void Page_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                SlideIn.Begin();
+            }
+            catch (System.Exception ex)
+            {
+                new MessageDialog("DEBUG:  " +  ex).ShowAsync();
+            }
+            
         }
     }
 }
