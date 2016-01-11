@@ -292,6 +292,7 @@ namespace RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_
 
             case 1:   //  RestaurantManager.ViewModels.ViewModel
                 userType = new global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.AddMemberName("IsLoading");
                 xamlType = userType;
                 break;
 
@@ -566,90 +567,100 @@ namespace RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_
             var that = (global::RestaurantManager.Models.Order)instance;
             that.Expedite = (global::System.Boolean)Value;
         }
-        private object get_10_BoolToColorConverter_TrueColor(object instance)
+        private object get_10_ViewModel_IsLoading(object instance)
+        {
+            var that = (global::RestaurantManager.ViewModels.ViewModel)instance;
+            return that.IsLoading;
+        }
+        private void set_10_ViewModel_IsLoading(object instance, object Value)
+        {
+            var that = (global::RestaurantManager.ViewModels.ViewModel)instance;
+            that.IsLoading = (global::System.Boolean)Value;
+        }
+        private object get_11_BoolToColorConverter_TrueColor(object instance)
         {
             var that = (global::RestaurantManager.Extensions.BoolToColorConverter)instance;
             return that.TrueColor;
         }
-        private void set_10_BoolToColorConverter_TrueColor(object instance, object Value)
+        private void set_11_BoolToColorConverter_TrueColor(object instance, object Value)
         {
             var that = (global::RestaurantManager.Extensions.BoolToColorConverter)instance;
             that.TrueColor = (global::Windows.UI.Color)Value;
         }
-        private object get_11_BoolToColorConverter_FalseColor(object instance)
+        private object get_12_BoolToColorConverter_FalseColor(object instance)
         {
             var that = (global::RestaurantManager.Extensions.BoolToColorConverter)instance;
             return that.FalseColor;
         }
-        private void set_11_BoolToColorConverter_FalseColor(object instance, object Value)
+        private void set_12_BoolToColorConverter_FalseColor(object instance, object Value)
         {
             var that = (global::RestaurantManager.Extensions.BoolToColorConverter)instance;
             that.FalseColor = (global::Windows.UI.Color)Value;
         }
-        private object get_12_Interaction_Behaviors(object instance)
+        private object get_13_Interaction_Behaviors(object instance)
         {
             return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_12_Interaction_Behaviors(object instance, object Value)
+        private void set_13_Interaction_Behaviors(object instance, object Value)
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_13_RightClickMessageDialogBehavior_Message(object instance)
+        private object get_14_RightClickMessageDialogBehavior_Message(object instance)
         {
             var that = (global::RestaurantManager.Extensions.RightClickMessageDialogBehavior)instance;
             return that.Message;
         }
-        private void set_13_RightClickMessageDialogBehavior_Message(object instance, object Value)
+        private void set_14_RightClickMessageDialogBehavior_Message(object instance, object Value)
         {
             var that = (global::RestaurantManager.Extensions.RightClickMessageDialogBehavior)instance;
             that.Message = (global::System.String)Value;
         }
-        private object get_14_RightClickMessageDialogBehavior_Title(object instance)
+        private object get_15_RightClickMessageDialogBehavior_Title(object instance)
         {
             var that = (global::RestaurantManager.Extensions.RightClickMessageDialogBehavior)instance;
             return that.Title;
         }
-        private void set_14_RightClickMessageDialogBehavior_Title(object instance, object Value)
+        private void set_15_RightClickMessageDialogBehavior_Title(object instance, object Value)
         {
             var that = (global::RestaurantManager.Extensions.RightClickMessageDialogBehavior)instance;
             that.Title = (global::System.String)Value;
         }
-        private object get_15_RightClickMessageDialogBehavior_AssociatedObject(object instance)
+        private object get_16_RightClickMessageDialogBehavior_AssociatedObject(object instance)
         {
             var that = (global::RestaurantManager.Extensions.RightClickMessageDialogBehavior)instance;
             return that.AssociatedObject;
         }
-        private object get_16_OrderViewModel_MenuItems(object instance)
+        private object get_17_OrderViewModel_MenuItems(object instance)
         {
             var that = (global::RestaurantManager.ViewModels.OrderViewModel)instance;
             return that.MenuItems;
         }
-        private void set_16_OrderViewModel_MenuItems(object instance, object Value)
+        private void set_17_OrderViewModel_MenuItems(object instance, object Value)
         {
             var that = (global::RestaurantManager.ViewModels.OrderViewModel)instance;
             that.MenuItems = (global::System.Collections.Generic.List<global::RestaurantManager.Models.MenuItem>)Value;
         }
-        private object get_17_OrderViewModel_SelectedMenuItem(object instance)
+        private object get_18_OrderViewModel_SelectedMenuItem(object instance)
         {
             var that = (global::RestaurantManager.ViewModels.OrderViewModel)instance;
             return that.SelectedMenuItem;
         }
-        private void set_17_OrderViewModel_SelectedMenuItem(object instance, object Value)
+        private void set_18_OrderViewModel_SelectedMenuItem(object instance, object Value)
         {
             var that = (global::RestaurantManager.ViewModels.OrderViewModel)instance;
             that.SelectedMenuItem = (global::RestaurantManager.Models.MenuItem)Value;
         }
-        private object get_18_OrderViewModel_AddMenuItemCommand(object instance)
+        private object get_19_OrderViewModel_AddMenuItemCommand(object instance)
         {
             var that = (global::RestaurantManager.ViewModels.OrderViewModel)instance;
             return that.AddMenuItemCommand;
         }
-        private object get_19_OrderViewModel_SubmitOrderCommand(object instance)
+        private object get_20_OrderViewModel_SubmitOrderCommand(object instance)
         {
             var that = (global::RestaurantManager.ViewModels.OrderViewModel)instance;
             return that.SubmitOrderCommand;
         }
-        private object get_20_OrderViewModel_CurrentlySelectedMenuItems(object instance)
+        private object get_21_OrderViewModel_CurrentlySelectedMenuItems(object instance)
         {
             var that = (global::RestaurantManager.ViewModels.OrderViewModel)instance;
             return that.CurrentlySelectedMenuItems;
@@ -722,72 +733,78 @@ namespace RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_
                 xamlMember.Getter = get_9_Order_Expedite;
                 xamlMember.Setter = set_9_Order_Expedite;
                 break;
+            case "RestaurantManager.ViewModels.ViewModel.IsLoading":
+                userType = (global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("RestaurantManager.ViewModels.ViewModel");
+                xamlMember = new global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlMember(this, "IsLoading", "Boolean");
+                xamlMember.Getter = get_10_ViewModel_IsLoading;
+                xamlMember.Setter = set_10_ViewModel_IsLoading;
+                break;
             case "RestaurantManager.Extensions.BoolToColorConverter.TrueColor":
                 userType = (global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("RestaurantManager.Extensions.BoolToColorConverter");
                 xamlMember = new global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlMember(this, "TrueColor", "Windows.UI.Color");
-                xamlMember.Getter = get_10_BoolToColorConverter_TrueColor;
-                xamlMember.Setter = set_10_BoolToColorConverter_TrueColor;
+                xamlMember.Getter = get_11_BoolToColorConverter_TrueColor;
+                xamlMember.Setter = set_11_BoolToColorConverter_TrueColor;
                 break;
             case "RestaurantManager.Extensions.BoolToColorConverter.FalseColor":
                 userType = (global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("RestaurantManager.Extensions.BoolToColorConverter");
                 xamlMember = new global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlMember(this, "FalseColor", "Windows.UI.Color");
-                xamlMember.Getter = get_11_BoolToColorConverter_FalseColor;
-                xamlMember.Setter = set_11_BoolToColorConverter_FalseColor;
+                xamlMember.Getter = get_12_BoolToColorConverter_FalseColor;
+                xamlMember.Setter = set_12_BoolToColorConverter_FalseColor;
                 break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
                 userType = (global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
                 xamlMember = new global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_12_Interaction_Behaviors;
-                xamlMember.Setter = set_12_Interaction_Behaviors;
+                xamlMember.Getter = get_13_Interaction_Behaviors;
+                xamlMember.Setter = set_13_Interaction_Behaviors;
                 break;
             case "RestaurantManager.Extensions.RightClickMessageDialogBehavior.Message":
                 userType = (global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("RestaurantManager.Extensions.RightClickMessageDialogBehavior");
                 xamlMember = new global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlMember(this, "Message", "String");
-                xamlMember.Getter = get_13_RightClickMessageDialogBehavior_Message;
-                xamlMember.Setter = set_13_RightClickMessageDialogBehavior_Message;
+                xamlMember.Getter = get_14_RightClickMessageDialogBehavior_Message;
+                xamlMember.Setter = set_14_RightClickMessageDialogBehavior_Message;
                 break;
             case "RestaurantManager.Extensions.RightClickMessageDialogBehavior.Title":
                 userType = (global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("RestaurantManager.Extensions.RightClickMessageDialogBehavior");
                 xamlMember = new global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlMember(this, "Title", "String");
-                xamlMember.Getter = get_14_RightClickMessageDialogBehavior_Title;
-                xamlMember.Setter = set_14_RightClickMessageDialogBehavior_Title;
+                xamlMember.Getter = get_15_RightClickMessageDialogBehavior_Title;
+                xamlMember.Setter = set_15_RightClickMessageDialogBehavior_Title;
                 break;
             case "RestaurantManager.Extensions.RightClickMessageDialogBehavior.AssociatedObject":
                 userType = (global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("RestaurantManager.Extensions.RightClickMessageDialogBehavior");
                 xamlMember = new global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_15_RightClickMessageDialogBehavior_AssociatedObject;
+                xamlMember.Getter = get_16_RightClickMessageDialogBehavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             case "RestaurantManager.ViewModels.OrderViewModel.MenuItems":
                 userType = (global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("RestaurantManager.ViewModels.OrderViewModel");
                 xamlMember = new global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlMember(this, "MenuItems", "System.Collections.Generic.List`1<RestaurantManager.Models.MenuItem>");
-                xamlMember.Getter = get_16_OrderViewModel_MenuItems;
-                xamlMember.Setter = set_16_OrderViewModel_MenuItems;
+                xamlMember.Getter = get_17_OrderViewModel_MenuItems;
+                xamlMember.Setter = set_17_OrderViewModel_MenuItems;
                 break;
             case "RestaurantManager.ViewModels.OrderViewModel.SelectedMenuItem":
                 userType = (global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("RestaurantManager.ViewModels.OrderViewModel");
                 xamlMember = new global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlMember(this, "SelectedMenuItem", "RestaurantManager.Models.MenuItem");
-                xamlMember.Getter = get_17_OrderViewModel_SelectedMenuItem;
-                xamlMember.Setter = set_17_OrderViewModel_SelectedMenuItem;
+                xamlMember.Getter = get_18_OrderViewModel_SelectedMenuItem;
+                xamlMember.Setter = set_18_OrderViewModel_SelectedMenuItem;
                 break;
             case "RestaurantManager.ViewModels.OrderViewModel.AddMenuItemCommand":
                 userType = (global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("RestaurantManager.ViewModels.OrderViewModel");
                 xamlMember = new global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlMember(this, "AddMenuItemCommand", "RestaurantManager.ViewModels.DelegateCommand");
-                xamlMember.Getter = get_18_OrderViewModel_AddMenuItemCommand;
+                xamlMember.Getter = get_19_OrderViewModel_AddMenuItemCommand;
                 xamlMember.SetIsReadOnly();
                 break;
             case "RestaurantManager.ViewModels.OrderViewModel.SubmitOrderCommand":
                 userType = (global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("RestaurantManager.ViewModels.OrderViewModel");
                 xamlMember = new global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlMember(this, "SubmitOrderCommand", "RestaurantManager.ViewModels.DelegateCommand");
-                xamlMember.Getter = get_19_OrderViewModel_SubmitOrderCommand;
+                xamlMember.Getter = get_20_OrderViewModel_SubmitOrderCommand;
                 xamlMember.SetIsReadOnly();
                 break;
             case "RestaurantManager.ViewModels.OrderViewModel.CurrentlySelectedMenuItems":
                 userType = (global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlUserType)GetXamlTypeByName("RestaurantManager.ViewModels.OrderViewModel");
                 xamlMember = new global::RestaurantManager.UniversalWindows.RestaurantManager_UniversalWindows_XamlTypeInfo.XamlMember(this, "CurrentlySelectedMenuItems", "System.Collections.ObjectModel.ObservableCollection`1<RestaurantManager.Models.MenuItem>");
-                xamlMember.Getter = get_20_OrderViewModel_CurrentlySelectedMenuItems;
+                xamlMember.Getter = get_21_OrderViewModel_CurrentlySelectedMenuItems;
                 xamlMember.SetIsReadOnly();
                 break;
             }

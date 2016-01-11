@@ -26,6 +26,26 @@
                                               VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"/>
             </Border>
         </ControlTemplate>
+        <!--<Storyboard x:Name="SlideIn">
+            <DoubleAnimation Storyboard.TargetName="GoToOrderButton"
+                             Storyboard.TargetProperty="(Button.RenderTransform).(TranslateTransform.X)"
+                             From="-200"
+                             To="0"
+                             Duration="0:0:1.5">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+            <DoubleAnimation Storyboard.TargetName="SubmitOrderButton"
+                             Storyboard.TargetProperty="(Button.RenderTransform).(TranslateTransform.X)"
+                             From="100"
+                             To="200"
+                             Duration="0:0:1.5">
+                <DoubleAnimation.EasingFunction>
+                    <CircleEase EasingMode="EaseOut" />
+                </DoubleAnimation.EasingFunction>
+            </DoubleAnimation>
+        </Storyboard>-->
     </Page.Resources>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
@@ -39,7 +59,7 @@
         </Grid.ColumnDefinitions>
         <TextBlock Text="Restaurant Manager" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource HeaderTextBlockStyle}"/>
         <TextBlock Text="Internal Test Version" HorizontalAlignment="Center" VerticalAlignment="Bottom" Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Style="{StaticResource SubheaderTextBlockStyle}"/>
-        <Button Content="Go to Orders View" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" Click="ExpeditePage_Click" Template="{StaticResource ButtonCustomControlTemplate}" />
-        <Button Content="Submit Order" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" Click="OrderPage_Click" Template="{StaticResource ButtonCustomControlTemplate}" />
+        <Button x:Name="GoToOrderButton" Content="Go to Orders View" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="0" Click="ExpeditePage_Click" Template="{StaticResource ButtonCustomControlTemplate}" />
+        <Button x:Name="SubmitOrderButton" Content="Submit Order" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" Click="OrderPage_Click" Template="{StaticResource ButtonCustomControlTemplate}" />
     </Grid>
 </Page>

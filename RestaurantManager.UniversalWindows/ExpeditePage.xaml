@@ -76,5 +76,6 @@
             </GridView.ItemTemplate>
         </GridView>
         <Button Content="Clear All Orders" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" />
+        <ProgressRing IsActive="{Binding IsLoading}" Grid.RowSpan="3"  Width="100" Height="100"/>
     </Grid>
 </Page>
